@@ -9,8 +9,8 @@
 @implementation AppDelegate
 @synthesize window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-	
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
 	[NSThread sleepForTimeInterval:2.0];
 	if ([self connectedToNetwork]) {
 		self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];      

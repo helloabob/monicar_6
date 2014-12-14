@@ -33,7 +33,7 @@ int deta=32;
 	
 	UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 	if(x<0){
-		x=320-img1.size.width/2+x;
+		x=screenWidth-img1.size.width/2+x;
 	}
 	[btn setFrame:CGRectMake(x,y, img1.size.width/2, img1.size.height/2)];
 	[btn setTag:func];
@@ -54,7 +54,7 @@ int deta=32;
 	
 	UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
 	if(x<0){
-		x=320-img1.size.width/2+x;
+		x=screenWidth-img1.size.width/2+x;
 	}
 	[btn setFrame:CGRectMake(x,y, img1.size.width*2/3, img1.size.height*2/3)];
 	[btn setTag:func];
@@ -159,38 +159,47 @@ int deta=32;
      [mA startPlay];
     }
 
+    NSArray *arrayOffsetX = nil;
+    if (screenWidth == 320) {
+        arrayOffsetX = @[@60,@100,@140,@180,@220];
+    }else if (screenWidth == 375) {
+        arrayOffsetX = @[@70,@120,@170,@220,@270];
+    } else {
+        arrayOffsetX = @[@78,@136,@194,@252,@310];
+    }
+    
     switch ([[UIApplication sharedApplication] statusBarOrientation]){
        case UIInterfaceOrientationPortrait:
         
             mV.imgView.frame = CGRectMake(mV.imgView.frame.origin.x, mV.imgView.frame.origin.y, self.view.bounds.size.width, self.view.bounds.size.height);
             
             [self layoutViewsWithTag:40 point:CGPointMake(10, 5)];
-            [self layoutViewsWithTag:41 point:CGPointMake(274, 5)];
-            [self layoutViewsWithTag:42 point:CGPointMake(100, 440)];
-            [self layoutViewsWithTag:43 point:CGPointMake(100, 440)];
-            [self layoutViewsWithTag:34 point:CGPointMake(60, 440)];
-            [self layoutViewsWithTag:35 point:CGPointMake(60, 440)];
+            [self layoutViewsWithTag:41 point:CGPointMake(screenWidth-46, 5)];
+            [self layoutViewsWithTag:42 point:CGPointMake([arrayOffsetX[1] floatValue], screenHeight-40)];
+            [self layoutViewsWithTag:43 point:CGPointMake([arrayOffsetX[1] floatValue], screenHeight-40)];
+            [self layoutViewsWithTag:34 point:CGPointMake([arrayOffsetX[0] floatValue], screenHeight-40)];
+            [self layoutViewsWithTag:35 point:CGPointMake([arrayOffsetX[0] floatValue], screenHeight-40)];
             
-            [self layoutViewsWithTag:31 point:CGPointMake(140, 440)];
-            [self layoutViewsWithTag:32 point:CGPointMake(140, 440)];
-            [self layoutViewsWithTag:33 point:CGPointMake(140, 440)];
+            [self layoutViewsWithTag:31 point:CGPointMake([arrayOffsetX[2] floatValue], screenHeight-40)];
+            [self layoutViewsWithTag:32 point:CGPointMake([arrayOffsetX[2] floatValue], screenHeight-40)];
+            [self layoutViewsWithTag:33 point:CGPointMake([arrayOffsetX[2] floatValue], screenHeight-40)];
             
-            [self layoutViewsWithTag:12 point:CGPointMake(180, 440)];
-            [self layoutViewsWithTag:13 point:CGPointMake(180, 440)];
+            [self layoutViewsWithTag:12 point:CGPointMake([arrayOffsetX[3] floatValue], screenHeight-40)];
+            [self layoutViewsWithTag:13 point:CGPointMake([arrayOffsetX[3] floatValue], screenHeight-40)];
             
-            [self layoutViewsWithTag:10 point:CGPointMake(220, 440)];
-            [self layoutViewsWithTag:11 point:CGPointMake(220, 440)];
+            [self layoutViewsWithTag:10 point:CGPointMake([arrayOffsetX[4] floatValue], screenHeight-40)];
+            [self layoutViewsWithTag:11 point:CGPointMake([arrayOffsetX[4] floatValue], screenHeight-40)];
             
-            [self layoutViewsWithTag:44 point:CGPointMake(278, 400)];
+            [self layoutViewsWithTag:44 point:CGPointMake(screenWidth-44, screenHeight-80)];
             
-            [self layoutViewsWithTag:45 point:CGPointMake(10, 440)];
-            [self layoutViewsWithTag:46 point:CGPointMake(274, 440)];
-            [self layoutViewsWithTag:47 point:CGPointMake(10, 400)];
+            [self layoutViewsWithTag:45 point:CGPointMake(10, screenHeight-40)];
+            [self layoutViewsWithTag:46 point:CGPointMake(screenWidth-46, screenHeight-40)];
+            [self layoutViewsWithTag:47 point:CGPointMake(10, screenHeight-80)];
             
-            [self layoutViewsWithTag:7 point:CGPointMake(260, 220)];
-            [self layoutViewsWithTag:5 point:CGPointMake(260, 310)];
-            [self layoutViewsWithTag:8 point:CGPointMake(10, 220)];
-            [self layoutViewsWithTag:6 point:CGPointMake(10, 310)];
+            [self layoutViewsWithTag:7 point:CGPointMake(screenWidth-60, screenHeight-260)];
+            [self layoutViewsWithTag:5 point:CGPointMake(screenWidth-60, screenHeight-170)];
+            [self layoutViewsWithTag:8 point:CGPointMake(10, screenHeight-260)];
+            [self layoutViewsWithTag:6 point:CGPointMake(10, screenHeight-170)];
             
             break;
         case UIInterfaceOrientationPortraitUpsideDown:
@@ -431,10 +440,10 @@ int deta=32;
             //////////// /////////////////////
 			int width=mV.imgView.frame.size.width;
 			int height=mV.imgView.frame.size.height;
-			if (width<480) {
+			if (width<screenWidth/2*3) {
 				//重新定义图片的位置和尺寸,位置
 				mV.imgView.frame = CGRectMake(0, 0, width+deta, height+deta);
-				mV.imgView.center= CGPointMake(160, 240);
+				mV.imgView.center= CGPointMake(screenWidth/2, screenWidth/4*3);
 				//完成动画移动
 				[UIImageView commitAnimations];
 			}
@@ -469,10 +478,10 @@ int deta=32;
             
 			int width=mV.imgView.frame.size.width;
 			int height=mV.imgView.frame.size.height;
-			if (width>320) {
+			if (width>screenWidth) {
 				//重新定义图片的位置和尺寸,位置
 				mV.imgView.frame = CGRectMake(0, 0, width-deta, height-deta);
-				mV.imgView.center= CGPointMake(160, 240);
+				mV.imgView.center= CGPointMake(screenWidth/2, screenWidth/4*3);
 				//完成动画移动
 				[UIImageView commitAnimations];
 			}

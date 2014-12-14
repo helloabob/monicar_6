@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		047D6A3915B68FD40049E389 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 047D6A3815B68FD40049E389 /* default.png */; };
 		0489DC3115C66580001AED2F /* myAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489DC3015C66580001AED2F /* myAudio.m */; };
 		0489DC4615C6661D001AED2F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0489DC4515C6661D001AED2F /* OpenAL.framework */; };
 		048B53ED15CBB26200147A8C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048B53EC15CBB26200147A8C /* SystemConfiguration.framework */; };
@@ -80,12 +79,17 @@
 		507EEA8015AF13D0000FA84E /* icon_r9_c33_s1.png in Resources */ = {isa = PBXBuildFile; fileRef = 507EEA4615AF13D0000FA84E /* icon_r9_c33_s1.png */; };
 		507EEA8115AF13D0000FA84E /* icon_r9_c5_s1.png in Resources */ = {isa = PBXBuildFile; fileRef = 507EEA4715AF13D0000FA84E /* icon_r9_c5_s1.png */; };
 		509DE1C415F6F6270075178F /* myVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 509DE1C315F6F6270075178F /* myVideo.m */; };
+		5A2FC77B1A3D3F09000BCBF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FC77A1A3D3F09000BCBF2 /* Images.xcassets */; };
+		5A2FC7821A3D3F15000BCBF2 /* Default-1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FC77D1A3D3F15000BCBF2 /* Default-1242.png */; };
+		5A2FC7831A3D3F15000BCBF2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FC77E1A3D3F15000BCBF2 /* Default-568h@2x.png */; };
+		5A2FC7841A3D3F15000BCBF2 /* Default-750.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FC77F1A3D3F15000BCBF2 /* Default-750.png */; };
+		5A2FC7851A3D3F15000BCBF2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FC7801A3D3F15000BCBF2 /* Default.png */; };
+		5A2FC7861A3D3F15000BCBF2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FC7811A3D3F15000BCBF2 /* Default@2x.png */; };
 		D8BC4E9915DD296D00B012B6 /* KKScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BC4E9815DD296D00B012B6 /* KKScrollView.m */; };
 		D8BC4E9D15DD297800B012B6 /* TapDetectingImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8BC4E9C15DD297800B012B6 /* TapDetectingImageView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		047D6A3815B68FD40049E389 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		0489DC2F15C66580001AED2F /* myAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAudio.h; sourceTree = "<group>"; };
 		0489DC3015C66580001AED2F /* myAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAudio.m; sourceTree = "<group>"; };
 		0489DC4515C6661D001AED2F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -172,6 +176,12 @@
 		507EEA4915AF13D0000FA84E /* spcaframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spcaframe.h; sourceTree = "<group>"; };
 		509DE1C215F6F6270075178F /* myVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myVideo.h; sourceTree = "<group>"; };
 		509DE1C315F6F6270075178F /* myVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myVideo.m; sourceTree = "<group>"; };
+		5A2FC77A1A3D3F09000BCBF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A2FC77D1A3D3F15000BCBF2 /* Default-1242.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-1242.png"; sourceTree = "<group>"; };
+		5A2FC77E1A3D3F15000BCBF2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5A2FC77F1A3D3F15000BCBF2 /* Default-750.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-750.png"; sourceTree = "<group>"; };
+		5A2FC7801A3D3F15000BCBF2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5A2FC7811A3D3F15000BCBF2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D8BC4E9715DD296D00B012B6 /* KKScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKScrollView.h; sourceTree = "<group>"; };
 		D8BC4E9815DD296D00B012B6 /* KKScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKScrollView.m; sourceTree = "<group>"; };
 		D8BC4E9B15DD297800B012B6 /* TapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapDetectingImageView.h; sourceTree = "<group>"; };
@@ -233,10 +243,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				5A2FC77A1A3D3F09000BCBF2 /* Images.xcassets */,
 				16607B4315FF893F0017FCC4 /* Vendor */,
 				507EEA0A15AF13D0000FA84E /* src */,
 				5008758815A74E0800A52053 /* icon.png */,
-				047D6A3815B68FD40049E389 /* default.png */,
 				500623B6157CB163008C2B07 /* Test_Prefix.pch */,
 				500623B7157CB163008C2B07 /* Test-Info.plist */,
 				500623A2157CAEB7008C2B07 /* CFNetwork.framework */,
@@ -270,6 +280,7 @@
 		507EEA0A15AF13D0000FA84E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				5A2FC77C1A3D3F15000BCBF2 /* res2 */,
 				509DE1C215F6F6270075178F /* myVideo.h */,
 				509DE1C315F6F6270075178F /* myVideo.m */,
 				D8BC4E9715DD296D00B012B6 /* KKScrollView.h */,
@@ -348,6 +359,18 @@
 			path = res;
 			sourceTree = "<group>";
 		};
+		5A2FC77C1A3D3F15000BCBF2 /* res2 */ = {
+			isa = PBXGroup;
+			children = (
+				5A2FC77D1A3D3F15000BCBF2 /* Default-1242.png */,
+				5A2FC77E1A3D3F15000BCBF2 /* Default-568h@2x.png */,
+				5A2FC77F1A3D3F15000BCBF2 /* Default-750.png */,
+				5A2FC7801A3D3F15000BCBF2 /* Default.png */,
+				5A2FC7811A3D3F15000BCBF2 /* Default@2x.png */,
+			);
+			path = res2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5008758915A74E0800A52053 /* icon.png in Resources */,
+				5A2FC77B1A3D3F09000BCBF2 /* Images.xcassets in Resources */,
 				507EEA5415AF13D0000FA84E /* icon_r11_c13_s1.png in Resources */,
 				507EEA5515AF13D0000FA84E /* icon_r11_c18_s1.png in Resources */,
 				507EEA5615AF13D0000FA84E /* icon_r11_c24_s1.png in Resources */,
@@ -408,6 +432,7 @@
 				507EEA5815AF13D0000FA84E /* icon_r11_c33_s1.png in Resources */,
 				507EEA5915AF13D0000FA84E /* icon_r11_c5_s1.png in Resources */,
 				507EEA5A15AF13D0000FA84E /* icon_r13_c13_s1.png in Resources */,
+				5A2FC7831A3D3F15000BCBF2 /* Default-568h@2x.png in Resources */,
 				507EEA5B15AF13D0000FA84E /* icon_r13_c18_s1.png in Resources */,
 				507EEA5C15AF13D0000FA84E /* icon_r13_c24_s1.png in Resources */,
 				507EEA5D15AF13D0000FA84E /* icon_r13_c30_s1.png in Resources */,
@@ -422,8 +447,10 @@
 				507EEA6615AF13D0000FA84E /* icon_r15_c40_s1.png in Resources */,
 				507EEA6715AF13D0000FA84E /* icon_r15_c5_s1.png in Resources */,
 				507EEA6815AF13D0000FA84E /* icon_r17_c44_s1.png in Resources */,
+				5A2FC7821A3D3F15000BCBF2 /* Default-1242.png in Resources */,
 				507EEA6915AF13D0000FA84E /* icon_r17_c46_s1.png in Resources */,
 				507EEA6A15AF13D0000FA84E /* icon_r18_c34_s1.png in Resources */,
+				5A2FC7861A3D3F15000BCBF2 /* Default@2x.png in Resources */,
 				507EEA6B15AF13D0000FA84E /* icon_r18_c39_s1.png in Resources */,
 				507EEA6C15AF13D0000FA84E /* icon_r19_c11_s1.png in Resources */,
 				507EEA6D15AF13D0000FA84E /* icon_r19_c19_s1.png in Resources */,
@@ -433,6 +460,8 @@
 				507EEA7115AF13D0000FA84E /* icon_r2_c21_s1.png in Resources */,
 				507EEA7215AF13D0000FA84E /* icon_r2_c27_s1.png in Resources */,
 				507EEA7315AF13D0000FA84E /* icon_r2_c4_s1.png in Resources */,
+				5A2FC7841A3D3F15000BCBF2 /* Default-750.png in Resources */,
+				5A2FC7851A3D3F15000BCBF2 /* Default.png in Resources */,
 				507EEA7415AF13D0000FA84E /* icon_r4_c32_s1.png in Resources */,
 				507EEA7515AF13D0000FA84E /* icon_r4_c37_s1.png in Resources */,
 				507EEA7615AF13D0000FA84E /* icon_r5_c20_s1.png in Resources */,
@@ -447,7 +476,6 @@
 				507EEA7F15AF13D0000FA84E /* icon_r9_c30_s1.png in Resources */,
 				507EEA8015AF13D0000FA84E /* icon_r9_c33_s1.png in Resources */,
 				507EEA8115AF13D0000FA84E /* icon_r9_c5_s1.png in Resources */,
-				047D6A3915B68FD40049E389 /* default.png in Resources */,
 				048D2B2B15BE996E005107BD /* movie.mov in Resources */,
 				504DE88D1600DE6000356F61 /* icon_r21_c3_s1.png in Resources */,
 			);
@@ -483,8 +511,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: YANG XU (5PD726Y8RY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG XU (5PD726Y8RY)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jun sun (Q6NY23PKLX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jun sun (Q6NY23PKLX)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,8 +531,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = Monicar;
-				PROVISIONING_PROFILE = "1433798E-E178-4FF1-B89C-ACE3004AF977";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1433798E-E178-4FF1-B89C-ACE3004AF977";
+				PROVISIONING_PROFILE = "255b56fc-f652-416c-9b38-80e023fbcef4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "255b56fc-f652-416c-9b38-80e023fbcef4";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv6 armv7";
 			};
@@ -513,6 +543,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: YANG XU (5PD726Y8RY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG XU (5PD726Y8RY)";
 				COPY_PHASE_STRIP = YES;
@@ -529,7 +561,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = Monicar;
-				PROVISIONING_PROFILE = "1433798E-E178-4FF1-B89C-ACE3004AF977";
+				PROVISIONING_PROFILE = "255b56fc-f652-416c-9b38-80e023fbcef4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1433798E-E178-4FF1-B89C-ACE3004AF977";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -619,6 +651,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: YANG XU (5PD726Y8RY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: YANG XU (5PD726Y8RY)";
 				COPY_PHASE_STRIP = YES;
@@ -635,7 +669,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = Monicar;
-				PROVISIONING_PROFILE = "1433798E-E178-4FF1-B89C-ACE3004AF977";
+				PROVISIONING_PROFILE = "255b56fc-f652-416c-9b38-80e023fbcef4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1433798E-E178-4FF1-B89C-ACE3004AF977";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;

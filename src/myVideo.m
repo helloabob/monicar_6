@@ -47,11 +47,11 @@ int videoflag=0;
         
 		jpgData=[[NSMutableData alloc]init];
 		
-        imgView=[[UIImageView alloc] initWithFrame:CGRectMake(0,0,320,480)];
+        imgView=[[UIImageView alloc] initWithFrame:CGRectMake(0,0,screenWidth,screenHeight)];
 		imgView.backgroundColor=[UIColor redColor];
 		imgView.image=nil;
         
-        scrollView = [[KKScrollView alloc] initWithFrame:CGRectMake(0,0,320,480)];
+        scrollView = [[KKScrollView alloc] initWithFrame:CGRectMake(0,0,screenWidth,screenHeight)];
        
     }
     return self;
@@ -156,7 +156,7 @@ int videoflag=0;
 	
 	//NSString *moviePath = [[NSBundle mainBundle] pathForResource:@"movie" ofType:@"mov"];
 	
-	size = CGSizeMake(320,240);//定义视频的大�?	
+	size = CGSizeMake(screenWidth,screenWidth/4*3);//定义视频的大�?
 	NSError *error = nil;
 	
 	//unlink([moviePath UTF8String]);
